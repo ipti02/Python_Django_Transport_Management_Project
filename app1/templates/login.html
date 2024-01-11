@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form | IIUC Transport Management System</title>
+</head>
+<link rel="stylesheet" href="{% static 'login.css' %}">
+<body>
+   <h1 class="h1"><i>International Islamic University Chittagong</i></h1>
+    <div class="container">
+      <div class="wrapper">
+        <div class="title" style="color: #f03333;"><span>Login Form</span></div>
+        <form method="POST">
+          {% csrf_token %}
+          
+          <!-- Add error message display section -->
+          {% if error %}
+              <div class="error-message">{{ error }}</div>
+          {% endif %}
+
+          <div class="row">
+            <i class="fas fa-username"></i>
+            <input type="text" placeholder=" Enter your Username" id="username" name="username" required>
+          </div>
+          <div class="row">
+            <i class="fas fa-user"></i>
+            <input type="text" placeholder=" Enter your Email" id="email" name="email" required>
+          </div>
+          <div class="row">
+            <i class="fas fa-lock"></i>
+            <input type="text" placeholder=" Enter your Password" id="password" name="pass" required>
+          </div>
+          <div class="pass"><a href="#">Forgot password?</a></div>
+          <div class="row button">
+            <input type="submit" value="Login"> 
+          </div>
+
+          <div class="signup-link">Not a member? <a href="{% url 'signup' %}" >Create a account</a></div>
+        </form>
+      </div>
+    </div>
+</body>
+</html>

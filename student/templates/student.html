@@ -1,0 +1,80 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student_registration</title>
+    
+</head>
+<link rel="stylesheet" href="{% static 'student.css' %}">
+<body>
+    <div class="container">
+        <h1>International Islamic University Chittagong</h1>
+        <h2>Student Registration From</h2>
+        <div class="form-wrapper">
+            <form  method="POST" action="{% url 'insert_data' %}">
+                {% csrf_token %}
+                <div class="form-item">
+                    <label for="fullname">Student Id:</label>
+                    <input type="text" name="stuid" id="student id" placeholder="Enter your student Id" required>
+                </div>
+                <div class="form-item">
+                    <label for="fullname">Student Name:</label>
+                    <input type="text" name="fullname" id="fullname" placeholder="Full Name" required>
+                </div>
+
+                <div class="form-item">
+                    <label for="gender">Gender:</label>
+                    <input type="text" name="gender" id="gender" required>
+                </div>
+                <div class="form-item">
+                    <label for="birth">Date of Birth</label>
+                    <input type="date" name="DateB" id="DateB" required>
+                </div>
+                <div class="form-item">
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" id="email" placeholder="student Id@iiuc.ac.bd" required>
+                </div>
+                <div class="form-item">
+                    <label for="level">Level:</label>
+                    <input type="text" name="level" id="level" required>
+                </div>
+                <div class="form-item">
+                    <label for="department">Department:</label>
+                    <input type="text" name="department" id="department" required>
+                </div>
+
+                <div class="form-item">
+                    <label for="phonenumber">Tel/Mobile:</label>
+                    <input type="tel" name="pnumber" id="pnumber" placeholder="XXX XXXX XXXX" required>
+                </div>
+                <hr>
+                <h3>Present Address</h3>
+                <div class="form-item">
+                    <label for="pstate">State:</label>
+                    <input type="text" name="state" id="state" placeholder="State" required>
+                </div>
+                <div class="form-item">
+                    <label for="pcity">City:</label>
+                    <input type="text" name="city" id="city" placeholder="City" required>
+                </div>
+                <div class="form-item">
+                    <label for="pzip">Zip Code:</label>
+                    <input type="number" name="zip_code" id="zip_code" placeholder="Zip Code" required>
+                </div>
+                
+                <div class="form-item">
+                    <label for="root">Bus Root</label>
+                    <input type="text" name="root" id="root" placeholder="Bus root" required>
+                </div>
+
+                <button class="register" type="submit">Register</button>
+           
+            </form>
+        </div>
+
+    </div>
+
+</body>
+</html>

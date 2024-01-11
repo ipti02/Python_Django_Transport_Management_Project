@@ -1,0 +1,71 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shedual | IIUC Transport Management System</title>
+    <script src="{% static 'js/transport_schedule.js' %}"></script>
+    
+</head>
+<link rel="stylesheet" href="{% static 'shedual.css' %}">
+
+<body>
+    <header class="header">
+        <h1 class="title" style="background: #001233;color: azure; height: 60px; padding-top: 15px;">IIUC Transport Schedule</h1>
+    </header>
+  <div class="schedule-container">
+    <div class="schedule-type">
+      <h2 style="text-shadow: 2px 2px 5px rgb(26, 53, 142);">Regular Transport</h2>
+      <ul class="schedule-options" id="regular-schedule">
+        <li><a href="#" onclick="showSchedule('teachers')">Transport Schedule for the Teachers</a></li>
+        <li><a href="#" onclick="showSchedule('officers')">Transport Schedule for the Officers and Staff</a></li>
+        <li><a href="http://127.0.0.1:8000/student_shedual/" onclick="showSchedule('students')">Transport Schedule for Students</a></li>
+        <li><a href="#" onclick="showSchedule('teachers-ramadan')">Transport Schedule for Teachers During Ramadan</a></li>
+        <li><a href="#" onclick="showSchedule('students-ramadan')">Transport Schedule for Students During Ramadan</a></li>
+        <li><a href="#" onclick="showSchedule('teachers-march')">Transport Schedule for the Teachers (March 6, 2023)</a></li>
+        <li><a href="#" onclick="showSchedule('officers-march')">Transport Schedule for Officers and Staff (March 6, 2023)</a></li>
+        <li><a href="#" onclick="showSchedule('students-march')">Transport Schedule for Students (March 6, 2023)</a></li>
+      </ul>
+      <div class="schedule-image" id="regular-image">
+        <img src="" alt="Regular Schedule Image">
+      </div>
+    </div>
+    <div class="schedule-type">
+      <h2 style="text-shadow: 2px 2px 5px rgb(26, 53, 142);">Friday Transport</h2>
+      <ul class="schedule-options" id="friday-schedule">
+        <li><a href="#" onclick="showSchedule('friday')">Transport Schedule for Friday</a></li>
+        <li><a href="#" onclick="showSchedule('friday-nov')">Transport Schedule on Friday (Nov 1, 2021)</a></li>
+      </ul>
+      <div class="schedule-image" id="friday-image">
+        <img src="" alt="Friday Schedule Image">
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function showSchedule(scheduleType) {
+      const scheduleImages = {
+        'teachers': 'path_to_teacher_image.jpg',
+        'officers': 'path_to_officers_image.jpg',
+        'students': 'path_to_students_image.jpg',
+        'teachers-ramadan': 'path_to_teachers_ramadan_image.jpg',
+        'students-ramadan': 'path_to_students_ramadan_image.jpg',
+        'teachers-march': 'path_to_teachers_march_image.jpg',
+        'officers-march': 'path_to_officers_march_image.jpg',
+        'students-march': 'path_to_students_march_image.jpg',
+        'friday': 'path_to_friday_image.jpg',
+        'friday-nov': 'path_to_friday_nov_image.jpg'
+      };
+
+      const imageSrc = scheduleImages[scheduleType];
+      document.getElementById(`${scheduleType}-image`).querySelector('img').src = imageSrc;
+
+      const allOptions = document.querySelectorAll('.schedule-options a');
+      allOptions.forEach(option => option.parentElement.classList.remove('schedule-active'));
+      const activeOption = document.querySelector(`.${scheduleType}`);
+      activeOption.classList.add('schedule-active');
+    }
+  </script>
+</body>
+</html>

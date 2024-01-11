@@ -1,0 +1,167 @@
+{% load static %}
+{% load bootstrap4 %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IIUC Trannsport Management System</title>
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ephesis&family=Kaushan+Script&display=swap" rel="stylesheet">
+
+</head>
+<body>
+     <link rel="stylesheet" href="{% static 'style.css' %}">
+    <marquee class="marq"  behavior="" direction="" loop="100" style="background-color:darkblue; "><button type="button;" style="background-color: #FF595A;">Details
+    </button>IIUC Transport Division Management System<button type="button;" style="background-color: #FF595A;">
+        Details</button>IIUC Transport Division Management System<button type="button;" style="background-color: #FF595A;">Details
+        </button>IIUC Transport Division Management System<button type="button;" style="background-color: #FF595A;">Details
+        </button>IIUC Transport Division Management System<button type="button;" style="background-color: #FF595A;">
+            Details</button>IIUC Transport Division Management System<button type="button;" style="background-color: #FF595A;">Details
+            </button>IIUC Transport Division Management System<button type="button;" style="background-color: #FF595A;">
+                Details</button>IIUC Transport Division Management System<button type="button;" style="background-color: #FF595A;">Details
+                </button>IIUC Transport Division Management System<button type="button;" style="background-color: #FF595A;">
+                    Details</button>IIUC Transport Division Management System<button type="button;" style="background-color: #FF595A;">Details
+                    </button>IIUC Transport Division Management System<button type="button;" style="background-color: #FF595A;">
+                        Details</button>IIUC Transport Division Management System<button type="button;" style="background-color: #FF595A;">Details
+                        </button>IIUC Transport Division Management System<button type="button;" style="background-color: #FF595A;">
+                            Details</button>IIUC Transport Division Management System<button type="button;" style="background-color: #FF595A;">Details
+                            </button>IIUC Transport Division Management System<button type="button;" style="background-color:#FF595A;">
+                                Details</button>IIUC Transport Division Management System<button type="button;" style="background-color: #FF595A;">Details
+                                </button>IIUC Transport Division Management System</marquee>
+
+
+        
+    <div class="main">
+        <div class="navbar">
+         
+            <div class="menu">
+                <ul>
+                    <li ><a href="http://127.0.0.1:8000/home">HOME</a></li>
+                    <li><a href="http://127.0.0.1:8000/information/">EMPLOYEE LIST</a></li>
+                    <li><a href="http://127.0.0.1:8000/shedual/">TRANSPORT SCHEDULE</a></li>
+                    
+                    <li><a href="http://127.0.0.1:8000/facilities/">TRANSPORT FACILITIES</a></li>
+                
+                    
+                    <li>
+                        <div class="w3-dropdown-click">
+                            <button onclick="myFunction()" class="w3-button w3-black">REGISTRATION</button>
+                            <div id="Demo" class="w3-dropdown-content w3-bar-block w3-border">
+                              <a href=" http://127.0.0.1:8000/yourapp/form/" class="w3-bar-item w3-button">STUDENT REGISTRATION</a>
+                              <a href="" class="w3-bar-item w3-button">TEACHER REGISTRATION</a>
+                              <a href="#" class="w3-bar-item w3-button">STUFF REGISTRATION</a>
+                            </div>
+                          </div>
+                          
+                          <script>
+                          function myFunction() {
+                            var x = document.getElementById("Demo");
+                            if (x.className.indexOf("w3-show") == -1) { 
+                              x.className += " w3-show";
+                            } else {
+                              x.className = x.className.replace(" w3-show", "");
+                            }
+                          }
+                          </script>
+                     </li>
+                     
+                    <li> <button class="buton" type="button;" style="background-color:#05063a; width: 80px;height: 25px; "><a href=" http://127.0.0.1:8000/login/">LOGOUT</a></button></li> 
+                    
+                    <li> 
+                        <a class="navbar-brand" href="http://127.0.0.1:8000/yourapp/profile/">
+                        <img src="{% static '7n.jpg' %}" width="30" height="30" class="profile-image" alt="Logo"> PROFILE
+                       
+                      </a></li>
+
+                </ul>
+                
+            </div>
+            
+
+          
+
+        </div> 
+       <div class="banner-text">
+        <h1>IIUC TRANSPORT DIVISION MANAGEMENT SYSTEM</h1>
+
+       </div>
+                        
+    </div>
+
+
+    <div class="section" style="background-color: #b3d6f7; text-align: center;padding-top: 0px;">
+        <h2 style="font-size: 35px; background-color: #001233; margin-bottom:0px; font-style: italic;margin-top: 3px;color: azure;">IIUC Bus Fleet - Serving the University Community</h2>
+        
+        <div class="container" style="display: flex; width: 1000px;height: 1048px;margin-left: 300px; padding-top: 10px;">
+          <div class="slider" style="flex: 1; max-width: 1000px; ">
+            <img class="mySlides" src="{% static '7n.jpg' %}" style="width:100%">
+            <img class="mySlides" src="{% static '14n.jpg' %}" style="width:100%">
+            <img class="mySlides" src="{% static '9n.jpg' %}" style="width:100%">
+            <img class="mySlides" src="{% static '11n.jpg' %}" style="width:100%">
+            <img class="mySlides" src="{% static 'nn.jpg' %}" style="width:100%">
+            <img class="mySlides" src="{% static '110n.jpg' %}" style="width:100%">
+            <img class="mySlides" src="{% static '4n.jpg' %}" style="width:100%">
+            <img class="mySlides" src="{% static '2n.jpg' %}" style="width:100%">
+            <img class="mySlides" src="{% static '3n.jpg' %}" style="width:100%">
+            <img class="mySlides" src="{% static '12n.jpg' %}" style="width:100%">
+            <img class="mySlides" src="{% static '9n.jpg' %}" style="width:100%">
+            <img class="mySlides" src="{% static '9n.jpg' %}" style="width:100%">
+            <img class="mySlides" src="{% static '9n.jpg' %}" style="width:100%">
+            <img class="mySlides" src="{% static '9n.jpg' %}" style="width:100%">
+          </div>
+          <div class="text" style="flex: 1;letter-spacing: 1px; font-size: 30px;  text-align: center;  align-items: center;height: 100vh;padding-top: 70px;font-family: 'Ephesis', cursive;">
+              <p>The IIUC Transport Management System is a user-friendly platform designed to efficiently manage transportation schedules. It offers specialized schedules for various user groups, including Teachers, Officers and Staff, and Students. The system provides dynamic visual representations of schedules, ensuring clarity and ease of use. With date-effective schedules and special arrangements for Ramadan, it adapts seamlessly to changing circumstances. Experience streamlined transportation operations and improved communication with the IIUC Transport Management System.</p>
+          </div>
+      </div>
+      <div class="contact-section">
+        <div class="divider">
+            <hr style="color: #001233; padding-top: 0px;">
+            <img src="{% static 'logo.png' %}" alt="Divider Image">
+        </div>
+        <div class="contact-content">
+            <h1><i>Join Us With</i></h1>
+        </div>
+  
+        <div class="social-icons">
+            <a href="https://www.facebook.com/"><img src="{% static 'flogo.jpg' %}" alt="Facebook"></a>
+            <a href="https://twitter.com/i/flow/login"><img src="{% static 'tlogo.png' %}" alt="Twitter"></a>
+            <a href="https://www.instagram.com/"><img src="{% static 'ilogo.jpg' %}" alt="Instagram"></a>
+            <a href="https://www.linkedin.com/feed/"><img src="{% static 'llogo.png' %}" alt="Linkedin"></a>
+            <a href="https://scholar.google.com/"><img src="{% static 'slogo.png' %}" alt="Google Scholar"></a>
+            <a href="https://github.com/"><img src="{% static 'glogo.png' %}" alt="Github"></a>
+        </div>
+    </div>
+              
+    <script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+        </script>
+            
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+
+</body>
+</html>

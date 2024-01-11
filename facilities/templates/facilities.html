@@ -1,0 +1,176 @@
+
+{% load static %}
+{% load bootstrap4 %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transport Facilities</title>
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'facilities.css' %}">
+</head>
+
+<body>
+    <link rel="stylesheet" href="{% static 'facilities.css' %}">
+    <header class="header">
+        <h1 class="title" style="background: #001233;color: azure; height: 60px; padding-top: 15px;">IIUC Transport Facilities</h1>
+    </header>
+
+    <section class="facility">
+        <div class="facility-icon">
+            <img src="{% static 'b.png' %}" alt="Bus Icon">
+        </div>
+        <div class="facility-info">
+            <h2>Bus Routes and Schedules</h2>
+            <p>Provide detailed information about the routes the bus takes, including pick-up and drop-off points. Include the timings for each stop along the route.</p>
+        </div>
+    </section>
+
+    <section class="facility">
+        <div class="facility-icon">
+            <img src="{% static 't.png' %}" alt="Tracking Icon">
+        </div>
+        <div class="facility-info">
+            <h2>Real-Time Tracking</h2>
+            <p>Integrate a GPS system to allow students to track the location of the bus in real-time. This feature helps students plan their trips more efficiently.</p>
+        </div>
+    </section>
+    <section class="facility">
+        <div class="facility-icon">
+            <img src="{% static 'a.png' %}" alt="Alerts Icon">
+        </div>
+        <div class="facility-info">
+            <h2>Alerts and Notifications</h2>
+            <p>Implement a notification system to inform students about delays, changes in schedule, or other important updates.</p>
+        </div>
+    </section>
+    <section class="facility">
+        <div class="facility-icon">
+            <img src="{% static 'book.png' %}" alt="Booking Icon">
+        </div>
+        <div class="facility-info">
+            <h2>Booking and Reservations</h2>
+            <p>Allow students to reserve seats in advance, especially during peak times.
+                Provide options for one-time bookings and recurring reservations (e.g., for daily commuters).</p>
+        </div>
+    </section>
+    <section class="facility">
+        <div class="facility-icon">
+            <img src="{% static 'ac.png' %}" alt="Accessibility  Icon">
+        </div>
+        <div class="facility-info">
+            <h2>Accessibility Information</h2>
+            <p>Include details about wheelchair accessibility and any other facilities for students with special needs.</p>
+        </div>
+    </section>
+    <section class="facility">
+        <div class="facility-icon">
+            <img src="{% static 'f.png' %}" alt="Fare Icon">
+        </div>
+        <div class="facility-info">
+            <h2>Fare Information</h2>
+            <p>Display clear information about ticket prices, payment methods, and any available discounts (e.g., for semester pass holders).</p>
+        </div>
+    </section>
+    <section class="facility">
+        <div class="facility-icon">
+            <img src="{% static 'c.png' %}" alt="Contact Icon">
+        </div>
+        <div class="facility-info">
+            <h2>Contact and Support</h2>
+            <p>Provide contact information for the transport department or relevant personnel for inquiries, feedback, or reporting issues.
+            </p>
+        </div>
+    </section>
+    <section class="facility">
+        <div class="facility-icon">
+            <img src="{% static 's.png' %}" alt="Safety Icon">
+        </div>
+        <div class="facility-info">
+            <h2>Safety Guidelines  </h2>
+            <p>Share important safety information for passengers, such as emergency procedures and rules for behavior on the bus.
+            </p>
+        </div>
+    </section>
+    <section class="facility">
+        <div class="facility-icon">
+            <img src="{% static 'fe.jpg' %}" alt="Feedback Icon">
+        </div>
+        <div class="facility-info">
+            <h2>Feedback and Reviews</h2>
+            <p>Allow students to leave feedback about their experiences, which can help improve the service.
+            </p>
+        </div>
+    </section>
+    <section class="facility">
+        <div class="facility-icon">
+            <img src="{% static 'faq.png' %}" alt="FAQ Icon">
+        </div>
+        <div class="facility-info">
+            <h2>FAQ Section</h2>
+            <p>Address common questions or concerns that students may have regarding the transportation system.
+            </p>
+        </div>
+    </section>
+    <section class="facility">
+        <div class="facility-icon">
+            <img src="{% static 'in.png' %}" alt="Integration Icon">
+        </div>
+        <div class="facility-info">
+            <h2>Integration with University Systems</h2>
+            <p>If possible, integrate the transport system with the university's official app or website for seamless access.
+            </p>
+        </div>
+    </section>
+    <section class="facility">
+        <div class="facility-icon">
+            <img src="{% static 'w.png' %}" alt="Weather Icon">
+        </div>
+        <div class="facility-info">
+            <h2>Weather Updates</h2>
+            <p>Provide weather forecasts or alerts that may impact the bus service, helping students plan accordingly.
+
+            </p>
+        </div>
+    </section>
+    <section class="facility">
+        <div class="facility-icon">
+            <img src="{% static 'so.jpg' %}" alt="Social Icon">
+        </div>
+        <div class="facility-info">
+            <h2>Social Media Integration</h2>
+            <p>Include links to social media pages or groups related to the transport service for updates and community discussions.
+            </p>
+        </div>
+    </section>
+    <section class="facility">
+        <div class="facility-icon">
+            <img src="{% static 'em.png' %}" alt="Emergency Icon">
+        </div>
+        <div class="facility-info">
+            <h2>Emergency Contacts:</h2>
+            <p>List emergency phone numbers for quick access in case of accidents, medical emergencies, or other critical situations.
+
+            </p>
+        </div>
+    </section>
+    <section class="facility">
+        <div class="facility-icon">
+            <img src="{% static 'us.png' %}" alt="User-Friendly Icon">
+        </div>
+        <div class="facility-info">
+            <h2>User-Friendly Interface</h2>
+            <p>Ensure that the website is easy to navigate and mobile-friendly for students accessing it on different devices.
+            </p>
+        </div>
+    </section>
+  
+
+    <footer class="footer">
+        <p>Contact us for more information: <a href="contact.html">Contact Page</a></p>
+    </footer>
+</body>
+</html>
